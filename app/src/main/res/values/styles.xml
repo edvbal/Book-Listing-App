@@ -1,0 +1,94 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- activity_main.xml -->
+    <!--/////////////////////////////////////////////////////////////////////////////////////////-->
+    <style name="parent_linearlayout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">@dimen/margin_app</item>
+    </style>
+    <style name="search_linearlayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/search_linearlayout_height</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="recycler_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/margin_app</item>
+    </style>
+
+    <style name="recycler_relative_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="search_edit_text">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">5</item>
+        <item name="android:hint">@string/search_hint</item>
+    </style>
+    <style name="search_image_view">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/search_icon_height</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:src">@drawable/search_icon</item>
+    </style>
+    <style name="divider_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/lightGray</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <style name="problem_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+    <style name="progress_bar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <!--/////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <!-- recycler_item.xml -->
+    <!--/////////////////////////////////////////////////////////////////////////////////////////-->
+    <style name="parent_linearlayout_recycler">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="divider_view_recycler">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/lightGray</item>
+    </style>
+    <style name="title_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+        <item name="android:layout_marginTop">@dimen/margin_recycler_item</item>
+    </style>
+    <style name="author_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:layout_marginBottom">@dimen/margin_recycler_item</item>
+    </style>
+
+
+    <!--/////////////////////////////////////////////////////////////////////////////////////////-->
+
+</resources>

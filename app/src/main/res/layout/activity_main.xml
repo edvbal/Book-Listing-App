@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.booklistingapp.MainActivity"
+    style="@style/parent_linearlayout">
+        <LinearLayout
+            style="@style/search_linearlayout">
+            <EditText
+                android:id="@+id/search_text"
+                style="@style/search_edit_text"
+                />
+            <ImageView
+                android:id="@+id/search_click"
+                style="@style/search_image_view"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            style="@style/recycler_relative_layout">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_list"
+                style="@style/recycler_view" />
+            <View
+                style="@style/divider_view"
+                />
+
+            <TextView
+                android:id="@+id/problemText"
+                style="@style/problem_text"
+                />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@style/progress_bar"/>
+
+        </RelativeLayout>
+
+</LinearLayout>

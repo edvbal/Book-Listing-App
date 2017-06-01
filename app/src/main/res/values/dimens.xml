@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_app">16dp</dimen>
+    <dimen name="margin_recycler_item">8dp</dimen>
+    <dimen name="search_linearlayout_height">39dp</dimen>
+    <dimen name="search_icon_height">30dp</dimen>
+
+</resources>

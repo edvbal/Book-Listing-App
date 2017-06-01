@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/parent_linearlayout_recycler">
+
+    <View
+        style="@style/divider_view_recycler"
+        />
+    <TextView
+        android:id="@+id/title"
+        style="@style/title_text"
+        tools:text="hi"/>
+    <TextView
+        android:id="@+id/author"
+        style="@style/author_text"
+        tools:text="hi" />
+
+</LinearLayout>
