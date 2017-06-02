@@ -15,8 +15,8 @@ import java.util.List;
 
 public class BookAdapter extends RecyclerView.Adapter<BookAdapter.ViewHolder> {
 
-    List<Book> books;
-    Context context;
+    private List<Book> books;
+    private Context context;
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
 

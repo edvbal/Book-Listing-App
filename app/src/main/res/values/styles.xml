@@ -36,7 +36,7 @@
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:layout_weight">5</item>
-        <item name="android:hint">@string/search_hint</item>
+        <item name="android:hint">@string/search</item>
     </style>
     <style name="search_image_view">
         <item name="android:layout_width">0dp</item>
@@ -61,6 +61,12 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_centerInParent">true</item>
     </style>
+    <style name="hint_text_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
     <!--/////////////////////////////////////////////////////////////////////////////////////////-->
 
     <!-- recycler_item.xml -->

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<layout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.android.booklistingapp.MainActivity"
-    style="@style/parent_linearlayout">
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        style="@style/parent_linearlayout"
+        tools:context="com.example.android.booklistingapp.MainActivity">
         <LinearLayout
             style="@style/search_linearlayout">
             <EditText
@@ -14,7 +15,10 @@
                 android:id="@+id/search_click"
                 style="@style/search_image_view"/>
         </LinearLayout>
-
+        <TextView
+            android:id="@+id/hint_text_view"
+            android:text="@string/search_hint"
+            style="@style/hint_text_view"/>
         <RelativeLayout
             style="@style/recycler_relative_layout">
 
@@ -36,4 +40,6 @@
 
         </RelativeLayout>
 
-</LinearLayout>
+    </LinearLayout>
+
+</layout>

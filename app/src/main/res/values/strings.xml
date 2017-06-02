@@ -4,5 +4,7 @@
     <string name="empty_search">Couldn\'t find any books</string>
     <string name="turn_on_internet">Please check your internet connection and try again.</string>
     <string name="cant_find_books">Couldn\'t find any books, try another book.</string>
-    <string name="search_hint">Insert book to search and click icon</string>
+    <string name="search_hint">Insert book name in the search and click the icon to search</string>
+    <string name="search">Search</string>
+
 </resources>
