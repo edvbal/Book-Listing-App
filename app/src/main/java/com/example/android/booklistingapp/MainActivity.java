@@ -65,8 +65,7 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(MainActivity.this, "First enter the book to search", Toast.LENGTH_SHORT).show();
                     else{
                         binding.progressBar.setVisibility(View.VISIBLE);
-                        BookAsyncTask asyncTask = new BookAsyncTask();
-                        asyncTask.execute(BOOKS_SEARCH_URL+searchText);
+                        new BookAsyncTask().execute(BOOKS_SEARCH_URL + searchText);
                     }
                 // If internet is not connected Toast message will be shown
                 }else{
@@ -106,9 +105,10 @@ public class MainActivity extends AppCompatActivity {
         // shown
         @Override
         protected void onPostExecute(List<Book> books) {
-            if(books == null){
+            if(books == null || books.isEmpty()){
                 binding.progressBar.setVisibility(View.GONE);
                 binding.problemText.setVisibility(View.VISIBLE);
+                binding.hintTextView.setVisibility(View.VISIBLE);
                 binding.problemText.setText(R.string.cant_find_books);
                 return;
             }

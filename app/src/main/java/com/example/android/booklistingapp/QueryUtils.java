@@ -67,15 +67,15 @@ public final class QueryUtils {
                 String title = volumeInfo.getString("title");
 
                 String authors = "";
-                JSONArray authorsArray = volumeInfo.getJSONArray("authors");
-                if (authorsArray.length() != 0){
+                if (volumeInfo.has("authors")) {
+                    JSONArray authorsArray = volumeInfo.getJSONArray("authors");
                     for (int j = 0; j < authorsArray.length(); j++){
                         if ( j+1 == authorsArray.length())
                             authors += authorsArray.getString(j) + ". ";
                         else
                             authors += authorsArray.getString(j) + ", ";
                     }
-                }
+                } else authors = "There are no authors";
                 Book book = new Book(authors,title);
                 books.add(book);
             }
